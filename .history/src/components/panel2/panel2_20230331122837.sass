@@ -1,0 +1,36 @@
+.panel2
+    display: none
+@media (max-width: 760px)
+    .panel2
+        display: block
+
+        border-bottom: 1px solid rgba(63, 78, 101, 0.2)
+        &__inner
+            padding: 0 30px
+            display: flex
+            align-items: center
+            justify-content: space-between
+            h3
+                cursor: pointer
+                position: relative
+                display: flex
+                justify-content: center
+                padding: 13px 0
+                width: 220px
+                display: flex
+                align-items: center
+                font-weight: 600
+                font-size: 12px
+                line-height: 15p
+                color: #3F4E65
+                img
+                    position: absolute
+                    left: 50px
+                    top: 9px
+@media (max-width: 490px)
+    .panel2
+        &__inner
+            h3
+                img
+                    left: 15px
+                    top: 9px

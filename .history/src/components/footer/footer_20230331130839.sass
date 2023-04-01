@@ -1,0 +1,322 @@
+.footer
+    background-color: #3F4E65
+    box-shadow: 0px 15px 70px -11px rgba(43, 28, 1, 0.04)
+    color: #ffffff
+    &__inner
+        padding-top: 71px
+        padding-bottom: 116px
+        display: flex
+        &-container-1
+            &-logo
+                button
+                    display: none
+            p
+                margin-top: 15px
+                max-width: 320px
+                font-weight: 400
+                font-size: 16px
+                line-height: 150%
+                color: #FFFFFF
+            span
+                display: block
+                font-weight: 400
+                font-size: 12px
+                line-height: 150%
+                color: #FFFFFF
+                margin-top: 45px
+            div
+                position: relative
+                input
+                    border: none
+                    outline: none
+                    margin-top: 14px
+                    width: 262px
+                    padding: 20.5px 0 20.5px 20px
+                    background-color: #FFFFFF
+                    border-radius: 36px
+                    font-weight: 400
+                    font-size: 12px
+                    line-height: 150%
+                    color: #111111
+                    // opacity: 0.6
+                    &::placeholder
+                        color: #5C6370
+                button
+                    position: absolute
+                    top: 24px
+                    right: 50px
+                    width: 39px
+                    height: 39px
+                    background: #FFC85E
+                    border-radius: 1000px
+                    border: none
+                    cursor: pointer
+        &-menu
+            margin-left: 59px
+        &-categories
+            margin-left: 98px
+        &-menu,&-categories
+            h3
+                font-weight: 600
+                font-size: 20px
+                line-height: 150%
+                color: #FFFFFF
+                margin-bottom: 25px
+            li
+                font-weight: 400
+                font-size: 14px
+                line-height: 150%
+                color: #FFFFFF
+                cursor: pointer
+                &:not(:last-child)
+                    margin-bottom: 20px
+        &-container-2
+            margin-left: 95px
+            h3
+                font-weight: 600
+                font-size: 20px
+                line-height: 150%
+                color: #FFFFFF
+                margin-bottom: 25px
+            button
+                margin-bottom: 20px
+                border: none
+                outline: none
+                font-weight: 700
+                font-size: 14px
+                line-height: 17px
+                color: #FFFFFF
+                background-color: #FFC85E
+                border-radius: 79px
+                padding: 21px 51px
+                cursor: pointer
+                img
+                    margin-left: 16px
+                    transform: translateY(3px)
+            p
+                font-weight: 400
+                font-size: 14px
+                line-height: 150%
+                color: #FFFFFF
+                margin-bottom: 15px
+            div
+                img
+                    cursor: pointer
+                    &:first-child
+                        margin-right: 10px
+        &-container-3
+            margin-left: 100px
+            h3
+                font-weight: 600
+                font-size: 20px
+                line-height: 150%
+                color: #FFFFFF
+                margin-bottom: 25px
+            h4
+                font-weight: 600
+                font-size: 14px
+                line-height: 150%
+                color: #FFFFFF
+            p
+                font-weight: 300
+                font-size: 12px
+                line-height: 150%
+                color: #FFFFFF
+            span
+                display: block
+                font-weight: 400
+                font-size: 10px
+                line-height: 150%
+                text-decoration-line: underline
+                color: #FFFFFF
+                margin-bottom: 25px
+                cursor: pointer
+            div
+                margin-top: 25px
+                img
+                    cursor: pointer
+                    &:first-child
+                        margin-right: 5px
+
+@media (max-width: 1410px)
+    .footer
+        &__inner
+            padding-top: 35px
+            padding-bottom: 57px
+            &-container-1
+                p
+                    margin-top: 15px
+                    max-width: 320px
+                    font-size: 14px
+                span
+                    font-size: 10px
+                    margin-top: 45px
+                div
+                    input
+                        margin-top: 14px
+                        width: 262px
+                        padding: 20.5px 0 20.5px 20px
+                        border-radius: 36px
+                        font-size: 10px
+                    button
+                        top: 24px
+                        right: 50px
+                        width: 39px
+                        height: 39px
+                        border-radius: 1000px
+            &-menu
+                margin-left: 30px
+            &-categories
+                margin-left: 49px
+            &-menu,&-categories
+                h3
+                    font-size: 18px
+                    margin-bottom: 25px
+                li
+                    font-size: 12px
+                    &:not(:last-child)
+                        margin-bottom: 20px
+            &-container-2
+                margin-left: 40px
+                h3
+                    font-size: 18px
+                    margin-bottom: 25px
+                button
+                    margin-bottom: 20px
+                    font-size: 12px
+                    line-height: 17px
+                    border-radius: 79px
+                    padding: 10px 25px
+                    img
+                        margin-left: 16px
+                        transform: translateY(3px)
+                p
+                    font-size: 12px
+                    margin-bottom: 15px
+                div
+                    img
+                        &:first-child
+                            margin-right: 10px
+            &-container-3
+                margin-left: 50px
+                h3
+                    font-size: 20px
+                    margin-bottom: 25px
+                h4
+                    font-size: 12px
+                p
+                    font-size: 10px
+                span
+                    font-size: 8px
+                    margin-bottom: 25px
+                div
+                    margin-top: 25px
+                    img
+                        &:first-child
+                            margin-right: 5px
+
+@media (max-width: 900px)
+    .footer
+        &__inner
+            flex-direction: column
+            justify-content: center
+            padding-top: 35px
+            padding-bottom: 57px
+            &-container-1
+                &-logo
+                    display: flex
+                    align-items: center
+                    justify-content: space-between
+                    img
+                        display: block
+                    button
+                        position: static
+                        display: block
+                        width: 149px !important
+                        margin-bottom: 0px
+                        border: none
+                        outline: none
+                        font-weight: 700
+                        font-size: 12px
+                        line-height: 17px
+                        color: #FFFFFF
+                        background-color: #FFC85E
+                        border-radius: 79px
+                        cursor: pointer
+                        padding: 10px 25px
+                        transform: translateY(10px)
+
+                p
+                    margin-top: 15px
+                    max-width: 320px
+                    font-size: 14px
+                    text-align: left
+                span
+                    font-size: 10px
+                    margin-top: 15px
+                div
+                    input
+                        display: block
+                        margin-left: auto
+                        margin-right: auto
+                        margin-top: 14px
+                        width: 262px
+                        padding: 20.5px 0 20.5px 20px
+                        border-radius: 36px
+                        font-size: 10px
+                    button
+                        top: 0px
+                        right: 0px
+                        width: 39px
+                        height: 39px
+                        border-radius: 1000px
+            &-menu
+                margin-left: 30px
+            &-categories
+                margin-left: 49px
+            &-menu,&-categories
+                h3
+                    font-size: 18px
+                    margin-bottom: 25px
+                li
+                    font-size: 12px
+                    &:not(:last-child)
+                        margin-bottom: 20px
+            &-container-2
+                margin-left: 40px
+                h3
+                    font-size: 18px
+                    margin-bottom: 25px
+                button
+                    margin-bottom: 20px
+                    font-size: 12px
+                    line-height: 17px
+                    border-radius: 79px
+                    padding: 10px 25px
+                    img
+                        margin-left: 16px
+                        transform: translateY(3px)
+                p
+                    font-size: 12px
+                    margin-bottom: 15px
+                div
+                    img
+                        &:first-child
+                            margin-right: 10px
+            &-container-3
+                margin-left: 50px
+                h3
+                    font-size: 20px
+                    margin-bottom: 25px
+                h4
+                    font-size: 12px
+                p
+                    font-size: 10px
+                span
+                    font-size: 8px
+                    margin-bottom: 25px
+                div
+                    margin-top: 25px
+                    img
+                        &:first-child
+                            margin-right: 5px

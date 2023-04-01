@@ -1,0 +1,79 @@
+.catalog
+    &__breadcrumbs
+        display: flex
+        margin-top: 45px
+        h4
+            font-weight: 300
+            font-size: 14px
+            line-height: 120%
+            color: #3F4E65
+        p
+            position: relative
+            font-weight: 300
+            font-size: 14px
+            line-height: 120%
+            color: #3F4E65
+            opacity: 0.5
+            margin-left: 20px
+            &::before
+                position: absolute
+                left: -10px
+                top: -8px
+                height: 16px
+                content: url('../../images/split.png')
+
+    &__titleblock
+        margin-top: 50px
+        display: flex
+        align-items: center
+        justify-content: space-between
+        h1
+            font-weight: 500
+            font-size: 40px
+            line-height: 120%
+            text-transform: uppercase
+            color: #111111
+        div
+            margin-left: 42px
+            display: flex
+            align-items: center
+            h4
+                font-weight: 500
+                font-size: 16px
+                line-height: 150%
+                color: #111111
+            p
+                position: relative
+                margin-left: 5px
+                font-weight: 400
+                font-size: 16px
+                line-height: 150%
+                color: #3F4E65
+                &::after
+                    position: absolute
+                    right: -10px
+                    top: -2px
+                    content: url('../../images/polygon.png')
+
+            div
+                position: relative
+                padding: 16.5px 65px 16.5px 21px
+                background-color: rgba(188, 166, 122, 0.2)
+                border-radius: 1000px
+                div
+                    position: absolute
+                    right: 5px
+                    padding: 10.5px 16.5px
+                    background: #FFFFFF
+                    border-radius: 1000px
+    &__hygienelist
+        display: flex
+        align-items: center
+        margin-top: 25px
+        li
+            font-size: 14px
+            line-height: 17px
+            text-align: center
+            color: #3F4E65
+            &:not(:last-child)
+                margin-right: 11px

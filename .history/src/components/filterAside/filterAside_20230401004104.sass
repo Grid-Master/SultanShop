@@ -1,0 +1,358 @@
+.filter
+    width: 238px
+    margin-top: 50px
+    margin-bottom: 102px
+    >h2
+        margin-bottom: 10px
+        font-weight: 500
+        font-size: 16px
+        line-height: 150%
+        color: #111111
+        span
+            display: none
+    >p
+        font-weight: 300
+        font-size: 14px
+        line-height: 150%
+        color: #3F4E65
+        margin-bottom: 16px
+        >span
+            font-weight: 500
+            font-size: 14px
+            line-height: 150%
+            color: #111111
+    input[type='number']
+        padding: 4px 0
+        width: 100px
+        font-weight: 300
+        font-size: 12px
+        line-height: 15px
+        text-align: center
+        color: #111111
+        background: linear-gradient(90deg, rgba(255, 198, 80, 0.3) 0%, rgba(254, 202, 110, 0.3) 97.25%)
+        border-radius: 1000px
+        border: none
+        outline: none
+        &::placeholder
+            color: #637289
+        &::-webkit-outer-spin-button,
+        &::-webkit-inner-spin-button
+            -webkit-appearance: none
+            margin: 0
+    &-span
+        margin: 0 10px
+    &__manufacturer
+        border-bottom: 1px dashed rgba(63, 78, 101, 0.3)
+        padding-bottom: 20px
+        margin-top: 30px
+    &__manufacturer, &__brand
+        &-container
+            position: relative
+            margin-bottom: 15px
+            h3
+                font-weight: 500
+                font-size: 16px
+                line-height: 150%
+                color: #111111
+            input
+                margin-top: 15px
+                font-weight: 400
+                font-size: 12px
+                line-height: 150%
+                color: #111111
+                background: #EDEDED
+                border-radius: 36px
+                border: none
+                outline: none
+                padding: 20.5px 0 20.5px 20px
+                width: 218px
+                &::placeholder
+                    color: #5C6370
+                    opacity: 0.6
+            button
+                padding: 10px 12px
+                right: 10px
+                top: 25px
+                position: absolute
+                background: #FFC85E
+                border-radius: 1000px
+                border: none
+                cursor: pointer
+        ul
+            margin-bottom: 15px
+            li
+                display: flex
+                align-items: center
+                input
+                    border: 0.5px solid #3F4E65
+                    border-radius: 1px
+                    margin-right: 10px
+                label
+                    position: relative
+                    font-weight: 400
+                    font-size: 14px
+                    line-height: 150%
+                    color: #3F4E65
+                    span
+                        position: absolute
+                        display: block
+                        right: -22px
+                        top: -4px
+                        font-size: 10px
+        p
+            width: max-content
+            position: relative
+            font-weight: 500
+            font-size: 12px
+            line-height: 150%
+            color: #3F4E65
+            cursor: pointer
+            .polygon
+                position: absolute
+                right: -11px
+                top: 5px
+            .polygon-rotated
+                transform: rotate(180deg)
+    &__brand
+        margin-top: 20px
+        &-btns
+            margin-top: 25px
+            display: flex
+            align-items: center
+        &-btn-1
+            background: #FFC85E
+            border: none
+            padding: 21px 51px
+            border-radius: 79px
+            font-weight: 700
+            font-size: 14px
+            line-height: 17px
+            color: #FFFFFF
+            cursor: pointer
+        &-btn-2
+            width: 59px
+            height: 59px
+            border: none
+            margin-left: 10px
+            background: #FFC85E
+            border-radius: 50%
+            cursor: pointer
+    &__body
+        margin-top: 20px
+    &__hands,&__foots, &__face,&__hair, &__tan, &__shaving, &__kits, &__brands
+        margin-top: 20px
+    &__body, &__hands,&__foots, &__face,&__hair,&__tan, &__shaving,&__kits
+        padding-bottom: 20px
+        border-bottom: 1px dashed rgba(63, 78, 101, 0.3)
+        h2
+            margin-bottom: 15px
+            font-weight: 500
+            font-size: 16px
+            line-height: 150%
+            text-transform: uppercase
+            color: #111111
+            // cursor: pointer
+        li
+            font-weight: 400
+            font-size: 14px
+            line-height: 150%
+            color: #3F4E65
+            cursor: pointer
+            &:not(:last-child)
+                margin-bottom: 10px
+    &__brands
+        h2
+            font-weight: 500
+            font-size: 16px
+            line-height: 150%
+            text-transform: uppercase
+            color: #111111
+            margin-bottom: 15px
+        #brand3
+            padding: 15.5px 40.5px
+            background: #FFFFFF
+            box-shadow: 0px 15px 70px -11px rgba(43, 28, 1, 0.06)
+            border-radius: 10px
+            margin-bottom: 10px
+        &-container-1
+            height: 77px
+            margin-bottom: 10px
+            img
+                box-shadow: 0px 15px 70px -11px rgba(43, 28, 1, 0.06)
+                border-radius: 10px
+                background: #FFFFFF
+                &:first-child
+                    margin-right: 10px
+                    padding: 4.5px 16px
+                &:last-child
+                    padding: 5.5px 16px
+        &-container-2
+            height: 77px
+            margin-bottom: 15px
+            img
+                box-shadow: 0px 15px 70px -11px rgba(43, 28, 1, 0.06)
+                border-radius: 10px
+                background: #FFFFFF
+                &:first-child
+                    margin-right: 10px
+                    padding: 4px 10px
+                &:last-child
+                    padding: 6px 1px
+        p
+            font-weight: 500
+            font-size: 12px
+            line-height: 150%
+            color: #3F4E65
+            cursor: pointer
+            img
+                padding-left: 3px
+                transform: translateY(-1px)
+    .activeAside
+        width: max-content
+        color: #ffffff
+        background-color: #3F4E65
+
+@media ( max-width: 1410px  )
+    .filter
+        margin-top: 30px
+        margin-bottom: 0px
+        >h2
+            margin-bottom: 10px
+            font-size: 14px
+        >p
+            font-size: 12px
+            margin-bottom: 16px
+            >span
+                font-size: 12px
+        input[type='number']
+            font-size: 10px
+        &-span
+            margin: 0 5px
+        &__manufacturer
+            border-bottom: 1px dashed rgba(63, 78, 101, 0.3)
+            padding-bottom: 20px
+            margin-top: 30px
+        &__manufacturer, &__brand
+            &-container
+                position: relative
+                margin-bottom: 15px
+                h3
+                    font-size: 14px
+                input
+                    margin-top: 15px
+                    font-size: 10px
+                    padding: 20.5px 0 20.5px 20px
+                    width: 200px
+                button
+                    padding: 10px 12px
+                    right: 10px
+                    top: 24px
+            ul
+                margin-bottom: 15px
+                li
+                    display: flex
+                    align-items: center
+                    input
+                        border: 0.5px solid #3F4E65
+                        border-radius: 1px
+                        margin-right: 10px
+                    label
+                        font-size: 12px
+                        span
+                            right: -22px
+                            top: -4px
+                            font-size: 8px
+            p
+                font-size: 10px
+                .polygon
+                    position: absolute
+                    right: -11px
+                    top: 5px
+                .polygon-rotated
+                    transform: rotate(180deg)
+        &__body
+            h2
+                font-size: 14px
+            li
+                font-size: 12px
+
+@media ( max-width: 900px  )
+    .filter
+        margin-top: 30px
+        margin-bottom: 0px
+        margin-left: auto
+        margin-right: auto
+        >h2
+            position: relative
+            margin-bottom: 10px
+            font-size: 14px
+            span
+                display: block
+                position: absolute
+                height: 36px
+                width: 36px
+                background: #FFCA65
+                opacity: 0.5
+                border-radius: 100px
+                top: -4.5px
+                right: 10px
+                img
+                    position: absolute
+                    top: 3px
+                    left: 10px
+        >p
+            font-size: 12px
+            margin-bottom: 16px
+            >span
+                font-size: 12px
+        input[type='number']
+            font-size: 10px
+        &-span
+            margin: 0 5px
+        &__manufacturer
+            border-bottom: 1px dashed rgba(63, 78, 101, 0.3)
+            padding-bottom: 20px
+            margin-top: 30px
+        &__manufacturer, &__brand
+            &-container
+                position: relative
+                margin-bottom: 15px
+                h3
+                    font-size: 14px
+                input
+                    margin-top: 15px
+                    font-size: 10px
+                    padding: 20.5px 0 20.5px 20px
+                    width: 200px
+                button
+                    padding: 10px 12px
+                    right: 10px
+                    top: 24px
+            ul
+                margin-bottom: 15px
+                li
+                    display: flex
+                    align-items: center
+                    input
+                        border: 0.5px solid #3F4E65
+                        border-radius: 1px
+                        margin-right: 10px
+                    label
+                        font-size: 12px
+                        span
+                            right: -22px
+                            top: -4px
+                            font-size: 8px
+            p
+                font-size: 10px
+                .polygon
+                    position: absolute
+                    right: -11px
+                    top: 5px
+                .polygon-rotated
+                    transform: rotate(180deg)
+        &__body
+            h2
+                font-size: 14px
+            li
+                font-size: 12px

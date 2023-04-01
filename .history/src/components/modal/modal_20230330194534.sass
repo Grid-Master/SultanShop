@@ -1,0 +1,21 @@
+.modal
+    height: 100vh
+    weight: 100vw
+    background: rgba(0, 0, 0, 0.4)
+    position: fixed
+    top: 0
+    left: 0
+    display: flex
+    align-items: center
+    justify-content: center
+    opacity: 0
+    pointer-events: none
+    transition: .5s
+    &.active
+        opacity: 1
+        pointer-events: all
+    &__content
+        width: 735px
+        height: 424px
+        background: #FFFFFF
+        border-radius: 8px

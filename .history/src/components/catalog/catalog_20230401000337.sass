@@ -1,0 +1,220 @@
+.catalog
+    &__titleblock
+        margin-top: 50px
+        display: flex
+        align-items: center
+        justify-content: space-between
+        h1
+            font-weight: 500
+            font-size: 40px
+            line-height: 120%
+            text-transform: uppercase
+            color: #111111
+        div
+            margin-left: 42px
+            display: flex
+            align-items: center
+            h4
+                font-weight: 500
+                font-size: 16px
+                line-height: 150%
+                color: #111111
+            select
+                transform: translateY(2px)
+                position: relative
+                margin-left: 5px
+                font-weight: 400
+                font-size: 16px
+                line-height: 150%
+                color: #3F4E65
+                border: none
+                background-color: none
+                outline: none
+                &::after
+                    position: absolute
+                    right: -10px
+                    top: -2px
+                    content: url('../../images/polygon.png')
+
+            div
+                position: relative
+                padding: 16.5px 65px 16.5px 21px
+                background-color: rgba(188, 166, 122, 0.2)
+                border-radius: 1000px
+                div
+                    position: absolute
+                    right: 5px
+                    padding: 10.5px 16.5px
+                    background: #FFFFFF
+                    border-radius: 1000px
+    &__hygienelist
+        display: flex
+        align-items: center
+        margin-top: 25px
+        li
+            padding: 18px 17px
+            font-size: 14px
+            line-height: 17px
+            text-align: center
+            background-color: #FFFFFF
+            box-shadow: 0px 15px 70px -11px rgba(43, 28, 1, 0.06)
+            border-radius: 10px
+            color: #3F4E65
+            cursor: pointer
+            transition: .3s
+            &:not(:last-child)
+                margin-right: 11px
+        .activeFilter
+            background-color: #FFC85E
+            color: #FFFFFF
+    &__container-goods
+        display: flex
+        &-grid
+            margin-top: 30px
+            margin-left: 108px
+            display: grid
+            align-items: none
+            grid-template-columns: repeat(3, 326px)
+            // grid-template-rows: repeat(5, 490px)
+            gap: 21px
+        &-descriptions
+            margin-top: 68px
+            margin-left: 108px
+            font-weight: 400
+            font-size: 14px
+            line-height: 150%
+            color: #3F4E65
+
+    .pagination
+        display: flex
+        margin-left: auto
+        margin-right: auto
+        align-items: center
+        justify-content: center
+        margin-left: 108px
+        margin-top: 58px
+    .page-number-next
+        cursor: pointer
+        margin-left: 35px
+        padding: 8px
+        background-image: url(../../images/arrow2.png)
+        background-position: center
+        background-repeat: no-repeat
+    .page-number-previous
+        cursor: pointer
+        margin-right: 35px
+        padding: 8px
+        background-image: url(../../images/arrow3.png)
+        background-position: center
+        background-repeat: no-repeat
+    .page-number
+        cursor: pointer
+        padding: 10px 14.5px
+        font-weight: 500
+        font-size: 14px
+        line-height: 130%
+        text-align: center
+        color: #3F4E65
+    .active
+        padding: 10px 14.5px
+        background: linear-gradient(90deg, rgba(255, 198, 80, 0.3) 0%, rgba(254, 202, 110, 0.3) 97.25%)
+        border-radius: 1000px
+        font-weight: 500
+        font-size: 14px
+        line-height: 130%
+        text-align: center
+        color: #3F4E65
+
+@media (max-width: 1410px)
+    .catalog
+        &__titleblock
+            margin-top: 30px
+            h1
+                font-size: 36px
+            div
+                margin-left: 42px
+                display: flex
+                align-items: center
+                h4
+                    font-size: 14px
+                select
+                    margin-left: 5px
+                    font-size: 14px
+                    &::after
+                        position: absolute
+                        right: -10px
+                        top: -2px
+                        content: url('../../images/polygon.png')
+        &__hygienelist
+            display: flex
+            align-items: center
+            margin-top: 25px
+            li
+                padding: 12px 4px
+                font-size: 12px
+                border-radius: 10px
+                &:not(:last-child)
+                    margin-right: 6px
+            .activeFilter
+                background-color: #FFC85E
+                color: #FFFFFF
+        &__container-goods
+            display: flex
+            &-grid
+                margin-top: 30px
+                margin-left: 39px
+                display: grid
+                align-items: none
+                grid-template-columns: repeat(2, 326px)
+            // grid-template-rows: repeat(5, 490px)
+                gap: 10px
+            &-descriptions
+                margin-top: 38px
+                margin-left: 39px
+                margin-bottom: 30px
+                font-size: 12px
+
+@media (max-width: 900px)
+    .catalog
+        &__titleblock
+            margin-top: 30px
+            h1
+                font-size: 36px
+            div
+                display: none
+                h4
+                    font-size: 14px
+                select
+                    margin-left: 5px
+                    font-size: 14px
+                    &::after
+                        position: absolute
+                        right: -10px
+                        top: -2px
+                        content: url('../../images/polygon.png')
+        &__hygienelist
+            display: none
+            li
+                padding: 12px 4px
+                font-size: 12px
+                border-radius: 10px
+                &:not(:last-child)
+                    margin-right: 6px
+            .activeFilter
+                background-color: #FFC85E
+                color: #FFFFFF
+        &__container-goods
+            display: flex
+            &-grid
+                margin-top: 30px
+                margin-left: 39px
+                display: grid
+                align-items: none
+                grid-template-columns: repeat(2, 326px)
+            // grid-template-rows: repeat(5, 490px)
+                gap: 10px
+            &-descriptions
+                margin-top: 38px
+                margin-left: 39px
+                margin-bottom: 30px
+                font-size: 12px

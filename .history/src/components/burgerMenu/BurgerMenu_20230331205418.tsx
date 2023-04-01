@@ -1,0 +1,12 @@
+import { FC } from 'react';
+import './burgerMenu.sass';
+
+const BurgerMenu: FC = () => {
+  return (
+    <div className="burgerMenu">
+      <div className="burgerMenu-content">fdf</div>
+    </div>
+  );
+};
+
+export default BurgerMenu;
