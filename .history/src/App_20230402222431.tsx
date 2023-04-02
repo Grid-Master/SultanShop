@@ -21,9 +21,9 @@ const App: FC = () => {
   //   { path: '/cart/order', element: <Order /> },
   // ]);
 
-  // useEffect(() => {
-  //   navigate('./catalog');
-  // }, []);
+  useEffect(() => {
+    navigate('catalog');
+  }, []);
 
   return (
     <div className="App">
@@ -32,6 +32,7 @@ const App: FC = () => {
       <Panel2 active={activeBurgerMenu} setActive={setActiveBurgerMenu} />
       <Breadcrumbs />
       <Routes>
+        <Route path="/" element={<h1 onClick={() => navigate('catalog')}>главная</h1>} />
         <Route path="/catalog" element={<Catalog />} />
         <Route path="/catalog/:id" element={<CardGood />} />
         <Route path="/cart" element={<Cart />} />

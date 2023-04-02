@@ -5,7 +5,7 @@ import Catalog from './components/catalog/Catalog';
 import Panel from './components/panel/Panel';
 import Footer from './components/footer/Footer';
 import CardGood from './components/cardGood/CardGood';
-import { Routes, Route, useNavigate, useRoutes } from 'react-router-dom';
+import { Routes, Route, useNavigate } from 'react-router-dom';
 import Breadcrumbs from './components/breadСrumbs/Breadcrumbs';
 import Cart from './components/cart/Cart';
 import Order from './components/order/Order';
@@ -14,16 +14,10 @@ import Panel2 from './components/panel2/Panel2';
 const App: FC = () => {
   const [activeBurgerMenu, setActiveBurgerMenu] = useState<boolean>(false);
   const navigate = useNavigate();
-  // const routes = useRoutes([
-  //   { path: '/catalog', element: <Catalog /> },
-  //   { path: '/catalog/:id', element: <CardGood /> },
-  //   { path: '/cart', element: <Cart /> },
-  //   { path: '/cart/order', element: <Order /> },
-  // ]);
 
-  // useEffect(() => {
-  //   navigate('./catalog');
-  // }, []);
+  useEffect(() => {
+    navigate('/catalog');
+  }, []);
 
   return (
     <div className="App">
@@ -33,7 +27,7 @@ const App: FC = () => {
       <Breadcrumbs />
       <Routes>
         <Route path="/catalog" element={<Catalog />} />
-        <Route path="/catalog/:id" element={<CardGood />} />
+        <Route path="/catalog/:id" element={<div>1</div>} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/cart/order" element={<Order />} />
       </Routes>

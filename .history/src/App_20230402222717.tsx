@@ -32,10 +32,10 @@ const App: FC = () => {
       <Panel2 active={activeBurgerMenu} setActive={setActiveBurgerMenu} />
       <Breadcrumbs />
       <Routes>
-        <Route path="/catalog" element={<Catalog />} />
-        <Route path="/catalog/:id" element={<CardGood />} />
-        <Route path="/cart" element={<Cart />} />
-        <Route path="/cart/order" element={<Order />} />
+        <Route path="./catalog" element={<Catalog />} />
+        <Route path="./catalog/:id" element={<CardGood />} />
+        <Route path="./cart" element={<Cart />} />
+        <Route path="./cart/order" element={<Order />} />
       </Routes>
       <Footer />
     </div>

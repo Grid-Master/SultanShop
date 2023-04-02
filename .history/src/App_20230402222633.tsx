@@ -21,9 +21,9 @@ const App: FC = () => {
   //   { path: '/cart/order', element: <Order /> },
   // ]);
 
-  // useEffect(() => {
-  //   navigate('./catalog');
-  // }, []);
+  useEffect(() => {
+    navigate('/catalog');
+  }, []);
 
   return (
     <div className="App">
@@ -33,9 +33,9 @@ const App: FC = () => {
       <Breadcrumbs />
       <Routes>
         <Route path="/catalog" element={<Catalog />} />
-        <Route path="/catalog/:id" element={<CardGood />} />
-        <Route path="/cart" element={<Cart />} />
-        <Route path="/cart/order" element={<Order />} />
+        <Route path="./catalog/:id" element={<CardGood />} />
+        <Route path="./cart" element={<Cart />} />
+        <Route path="./cart/order" element={<Order />} />
       </Routes>
       <Footer />
     </div>

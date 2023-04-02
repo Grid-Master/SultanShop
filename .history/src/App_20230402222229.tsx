@@ -14,16 +14,16 @@ import Panel2 from './components/panel2/Panel2';
 const App: FC = () => {
   const [activeBurgerMenu, setActiveBurgerMenu] = useState<boolean>(false);
   const navigate = useNavigate();
-  // const routes = useRoutes([
-  //   { path: '/catalog', element: <Catalog /> },
-  //   { path: '/catalog/:id', element: <CardGood /> },
-  //   { path: '/cart', element: <Cart /> },
-  //   { path: '/cart/order', element: <Order /> },
-  // ]);
+  const routes = useRoutes([
+    { path: '/catalog', element: <Catalog /> },
+    { path: '/catalog/:id', element: <CardGood /> },
+    { path: '/cart', element: <Cart /> },
+    { path: '/cart/order', element: <Order /> },
+  ]);
 
-  // useEffect(() => {
-  //   navigate('./catalog');
-  // }, []);
+  useEffect(() => {
+    navigate('/catalog');
+  }, []);
 
   return (
     <div className="App">

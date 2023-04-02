@@ -21,9 +21,9 @@ const App: FC = () => {
   //   { path: '/cart/order', element: <Order /> },
   // ]);
 
-  // useEffect(() => {
-  //   navigate('./catalog');
-  // }, []);
+  useEffect(() => {
+    navigate('/catalog');
+  }, []);
 
   return (
     <div className="App">
