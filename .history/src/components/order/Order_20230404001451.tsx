@@ -122,8 +122,6 @@ const Order: FC = () => {
                   Звоните: <span>+7 777 490 00 91</span> Менеджер Вам ответит на все вопросы.
                 </p>
               </div>
-            </div>
-            <div>
               <div></div>
               <h3 className="order__inner-point">
                 <span>3</span> Дополнительно
@@ -151,15 +149,6 @@ const Order: FC = () => {
             </button>
           </div>
         </div>
-      </div>
-      <div className="order__inner-container-4">
-        <h3>
-          {getTotalSum()} ₸
-          <button onClick={() => navigateHandler()}>
-            <img src={edit} alt="edit" />
-          </button>
-        </h3>
-        <button onClick={() => setThanksModal(true)}>Подтверждение заказа</button>
       </div>
       <Modal active={thanksModal} setActive={setThanksModal}>
         <div>

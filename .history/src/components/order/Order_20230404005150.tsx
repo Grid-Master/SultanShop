@@ -155,7 +155,7 @@ const Order: FC = () => {
       <div className="order__inner-container-4">
         <h3>
           {getTotalSum()} ₸
-          <button onClick={() => navigateHandler()}>
+          <button>
             <img src={edit} alt="edit" />
           </button>
         </h3>

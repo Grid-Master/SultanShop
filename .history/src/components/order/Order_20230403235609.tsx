@@ -89,50 +89,45 @@ const Order: FC = () => {
             <button onClick={() => setThanksModal(true)}>Подтверждение заказа</button>
           </div>
           <div className="order__inner-container-2">
-            <div>
-              <div className="order__inner-container-2-info">
-                <div>
-                  <span>
-                    <img src={payment} alt="payment" />
-                  </span>
-                  <h3>Оплата</h3>
-                </div>
-                <p>Принимаем оплату наличными, по карте и через расчетный счет.</p>
+            <div className="order__inner-container-2-info">
+              <div>
+                <span>
+                  <img src={payment} alt="payment" />
+                </span>
+                <h3>Оплата</h3>
               </div>
-              <div className="order__inner-container-2-info">
-                <div>
-                  <span>
-                    <img src={deliver} alt="deliver" />
-                  </span>
-                  <h3>Доставка</h3>
-                </div>
-                <p>
-                  Бесплатная доставка от <span>10 000 ₸ </span>
-                  по области. Наша доставка работает ежедневно.
-                </p>
-              </div>
-              <div className="order__inner-container-2-info">
-                <div>
-                  <span>
-                    <img className="order-img-question" src={question} alt="question" />
-                  </span>
-                  <h3>возникли вопросы?</h3>
-                </div>
-                <p>
-                  Звоните: <span>+7 777 490 00 91</span> Менеджер Вам ответит на все вопросы.
-                </p>
-              </div>
+              <p>Принимаем оплату наличными, по карте и через расчетный счет.</p>
             </div>
-            <div>
-              <div></div>
-              <h3 className="order__inner-point">
-                <span>3</span> Дополнительно
-              </h3>
-              <label>
-                Комментарий
-                <textarea placeholder="Введите ваш комментарий"></textarea>
-              </label>
+            <div className="order__inner-container-2-info">
+              <div>
+                <span>
+                  <img src={deliver} alt="deliver" />
+                </span>
+                <h3>Доставка</h3>
+              </div>
+              <p>
+                Бесплатная доставка от <span>10 000 ₸ </span>
+                по области. Наша доставка работает ежедневно.
+              </p>
             </div>
+            <div className="order__inner-container-2-info">
+              <div>
+                <span>
+                  <img className="order-img-question" src={question} alt="question" />
+                </span>
+                <h3>возникли вопросы?</h3>
+              </div>
+              <p>
+                Звоните: <span>+7 777 490 00 91</span> Менеджер Вам ответит на все вопросы.
+              </p>
+            </div>
+            <h3 className="order__inner-point">
+              <span>3</span> Дополнительно
+            </h3>
+            <label>
+              Комментарий
+              <textarea placeholder="Введите ваш комментарий"></textarea>
+            </label>
           </div>
           <div className="order__inner-container-3">
             <h2>Ваш заказ</h2>
@@ -151,15 +146,6 @@ const Order: FC = () => {
             </button>
           </div>
         </div>
-      </div>
-      <div className="order__inner-container-4">
-        <h3>
-          {getTotalSum()} ₸
-          <button onClick={() => navigateHandler()}>
-            <img src={edit} alt="edit" />
-          </button>
-        </h3>
-        <button onClick={() => setThanksModal(true)}>Подтверждение заказа</button>
       </div>
       <Modal active={thanksModal} setActive={setThanksModal}>
         <div>

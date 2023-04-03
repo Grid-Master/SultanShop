@@ -31,7 +31,6 @@ const Panel: FC<IPanelProps> = ({ active, setActive }) => {
   };
 
   const navigateCartHandler = () => {
-    window.scrollTo(0, 0);
     setActive(false);
     navigate('/cart');
   };
@@ -68,7 +67,7 @@ const Panel: FC<IPanelProps> = ({ active, setActive }) => {
               <img src={download} alt="download" />
             </button>
             <div className="panel__inner-cart">
-              <img src={cart} alt="cart" onClick={navigateCartHandler} />
+              <img src={cart} alt="cart" onClick={() => navigate('/cart')} />
               {cartItems.length ? <span>{cartItems.length}</span> : null}
               <div>
                 <p>Корзина</p>

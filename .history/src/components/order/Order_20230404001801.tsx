@@ -152,15 +152,6 @@ const Order: FC = () => {
           </div>
         </div>
       </div>
-      <div className="order__inner-container-4">
-        <h3>
-          {getTotalSum()} ₸
-          <button onClick={() => navigateHandler()}>
-            <img src={edit} alt="edit" />
-          </button>
-        </h3>
-        <button onClick={() => setThanksModal(true)}>Подтверждение заказа</button>
-      </div>
       <Modal active={thanksModal} setActive={setThanksModal}>
         <div>
           <img onClick={() => setThanksModal(false)} src={cross} alt="cross" />

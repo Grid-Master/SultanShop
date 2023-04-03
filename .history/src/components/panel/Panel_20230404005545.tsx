@@ -31,7 +31,6 @@ const Panel: FC<IPanelProps> = ({ active, setActive }) => {
   };
 
   const navigateCartHandler = () => {
-    window.scrollTo(0, 0);
     setActive(false);
     navigate('/cart');
   };

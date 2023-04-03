@@ -123,16 +123,13 @@ const Order: FC = () => {
                 </p>
               </div>
             </div>
-            <div>
-              <div></div>
-              <h3 className="order__inner-point">
-                <span>3</span> Дополнительно
-              </h3>
-              <label>
-                Комментарий
-                <textarea placeholder="Введите ваш комментарий"></textarea>
-              </label>
-            </div>
+            <h3 className="order__inner-point">
+              <span>3</span> Дополнительно
+            </h3>
+            <label>
+              Комментарий
+              <textarea placeholder="Введите ваш комментарий"></textarea>
+            </label>
           </div>
           <div className="order__inner-container-3">
             <h2>Ваш заказ</h2>
@@ -151,15 +148,6 @@ const Order: FC = () => {
             </button>
           </div>
         </div>
-      </div>
-      <div className="order__inner-container-4">
-        <h3>
-          {getTotalSum()} ₸
-          <button onClick={() => navigateHandler()}>
-            <img src={edit} alt="edit" />
-          </button>
-        </h3>
-        <button onClick={() => setThanksModal(true)}>Подтверждение заказа</button>
       </div>
       <Modal active={thanksModal} setActive={setThanksModal}>
         <div>
