@@ -54,7 +54,7 @@
                     display: flex
                     align-items: center
                     margin-right: 38px
-                    button
+                    .cardGood__inner-container-1-btn-2, .cardGood__inner-container-1-btn-1
                         text-align: center
                         width: 34px
                         height: 25px
@@ -91,56 +91,55 @@
                         position: absolute
                         top: 19px
                         right: 37px
-        &-container-3
-            display: none !important
         &-container-2
             display: flex
             align-items: center
             margin-top: 20px
-            &-btn-3
-                display: none
-            &-btn-1
-                position: relative
-                padding: 0 !important
-                height: 77px
-                width: 77px
-                border: none
-                background: #FFFFFF !important
-                box-shadow: 0px 15px 70px -11px rgba(43, 28, 1, 0.1)
-                border-radius: 10px !important
-                margin-right: 14px
-                img
+            >div
+                .cardGood__inner-container-2-btn-3
+                    display: none
+                &-btn-1
+                    position: relative
+                    padding: 0 !important
+                    height: 77px
+                    width: 77px
+                    border: none
+                    background: #FFFFFF !important
+                    box-shadow: 0px 15px 70px -11px rgba(43, 28, 1, 0.1)
+                    border-radius: 10px !important
+                    margin-right: 14px
+                    img
+                        position: absolute
+                        left: 27px
+                        top: 26.5px !important
+                p
+                    font-weight: 400
+                    font-size: 12px
+                    line-height: 150%
+                    text-align: center
+                    color: #3F4E65
+                    width: 316px
+                    padding: 20.5px 35.5px
+                    background: #FFFFFF !important
+                    box-shadow: 0px 15px 70px -11px rgba(43, 28, 1, 0.1)
+                    border-radius: 10px !important
+                    margin-right: 10px
+                    span
+                        font-weight: 800
+                &-btn-2
                     position: absolute
-                    left: 27px
-                    top: 26.5px !important
-            p
-                font-weight: 400
-                font-size: 12px
-                line-height: 150%
-                text-align: center
-                color: #3F4E65
-                width: 316px
-                padding: 20.5px 35.5px
-                background: #FFFFFF !important
-                box-shadow: 0px 15px 70px -11px rgba(43, 28, 1, 0.1)
-                border-radius: 10px !important
-                margin-right: 10px
-                span
-                    font-weight: 800
-            &-btn-2
-                position: absolute
-                height: 77px
-                font-weight: 700
-                font-size: 14px
-                line-height: 17px
-                color: #3f4e65 !important
-                background: #FFFFFF !important
-                box-shadow: 0px 15px 70px -11px rgba(43, 28, 1, 0.1)
-                border-radius: 10px !important
-                img
-                    position: absolute
-                    right: 47px !important
-                    top: 31.5px !important
+                    height: 77px
+                    font-weight: 700
+                    font-size: 14px
+                    line-height: 17px
+                    color: #3f4e65 !important
+                    background: #FFFFFF !important
+                    box-shadow: 0px 15px 70px -11px rgba(43, 28, 1, 0.1)
+                    border-radius: 10px !important
+                    img
+                        position: absolute
+                        right: 47px !important
+                        top: 31.5px !important
         &-info,&-characteristics
             margin-top: 35px
             li
@@ -259,8 +258,6 @@
                     img
                         right: 23px !important
                         top: 31.5px !important
-            // &-container-3
-            //     display: block
             &-info,&-characteristics
                 margin-top: 35px
                 li
@@ -399,7 +396,7 @@
                     margin-right: auto
             >div
                 width: 100%
-                padding-left: 0px
+                padding-left: 40px
                 >span
                     padding-top: 35px
                     font-size: 12px
@@ -417,6 +414,9 @@
                         left: 6px
                         top: -1px
                 >div
+                    margin-left: auto
+                    margin-right: auto
+                    width: max-content
                     h3
                         font-size: 30px
                         margin-right: 20px
@@ -430,17 +430,9 @@
                             margin: 0 20px
                     >button
                         display: none
-                        font-size: 12px
-                        padding: 21px 74.5px 21px 39.5px
-                        border-radius: 79px
-                        img
-                            top: 19px
-                            right: 37px
             &-container-2
-                width: max-content
                 margin-top: 20px
-                margin-left: auto
-                margin-right: auto
+                flex-direction: column
                 &-btn-1
                     display: block !important
                     margin-right: 0px
@@ -448,14 +440,13 @@
                     height: 59px
                     width: 59px
                     img
-                        left: 20px
+                        left: 19.5px
                         top: 19px !important
                 p
-                    display: none
                     font-size: 10px
                     padding: 23.5px 10.5px
                 &-btn-2
-                    display: none !important
+                    display: block !important
                     font-size: 12px
                     border-radius: 10px !important
                     padding: 21px 44.5px 21px 30.5px !important
@@ -464,43 +455,6 @@
                         top: 31.5px !important
                 &-btn-3
                     display: block !important
-            &-container-3
-                display: block !important
-                p
-
-                    margin-top: 20px
-                    font-weight: 400
-                    font-size: 12px
-                    line-height: 150%
-                    text-align: center
-                    color: #3F4E65
-                    padding: 29.5px 35.5px
-                    background: #FFFFFF !important
-                    box-shadow: 0px 15px 70px -11px rgba(43, 28, 1, 0.1)
-                    border-radius: 10px !important
-                    margin-right: 0px
-                    span
-                        font-weight: 800
-                &-btn-2
-                    padding: 0 auto !important
-                    margin-right: 0 !important
-                    width: 100% !important
-                    margin-top: 10px
-                    display: block !important
-                    position: absolute
-                    height: 77px
-                    font-weight: 700
-                    font-size: 14px
-                    line-height: 17px
-                    color: #3f4e65 !important
-                    background: #FFFFFF !important
-                    box-shadow: 0px 15px 70px -11px rgba(43, 28, 1, 0.1)
-                    border-radius: 10px !important
-                    img
-                        position: absolute
-                        right: 23px !important
-                        top: 31.5px !important
-
             &-info,&-characteristics
                 margin-top: 35px
                 li

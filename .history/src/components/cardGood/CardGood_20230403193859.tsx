@@ -80,15 +80,6 @@ const CardGood: FC = () => {
                 <img src={download} alt="download" />
               </button>
             </div>
-            <div className="cardGood__inner-container-3">
-              <p>
-                При покупке от <span>10 000 ₸</span> бесплатная доставка по Кокчетаву и области
-              </p>
-              <button className="cardGood__inner-container-3-btn-2">
-                Прайс-лист
-                <img src={download} alt="download" />
-              </button>
-            </div>
             <ul className="cardGood__inner-info">
               <li>
                 Производитель: <span>{good?.manufacturer}</span>

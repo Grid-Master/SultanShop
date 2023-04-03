@@ -63,9 +63,7 @@ const CardGood: FC = () => {
               </button>
             </div>
             <div className="cardGood__inner-container-2">
-              <button
-                className="cardGood__inner-container-2-btn-3"
-                onClick={() => addGoodToCartHandler(good)}>
+              <button onClick={() => addGoodToCartHandler(good)}>
                 В корзину
                 <img src={cart} alt="carts" />
               </button>
@@ -76,15 +74,6 @@ const CardGood: FC = () => {
                 При покупке от <span>10 000 ₸</span> бесплатная доставка по Кокчетаву и области
               </p>
               <button className="cardGood__inner-container-2-btn-2">
-                Прайс-лист
-                <img src={download} alt="download" />
-              </button>
-            </div>
-            <div className="cardGood__inner-container-3">
-              <p>
-                При покупке от <span>10 000 ₸</span> бесплатная доставка по Кокчетаву и области
-              </p>
-              <button className="cardGood__inner-container-3-btn-2">
                 Прайс-лист
                 <img src={download} alt="download" />
               </button>

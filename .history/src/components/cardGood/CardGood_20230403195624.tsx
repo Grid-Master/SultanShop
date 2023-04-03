@@ -50,12 +50,17 @@ const CardGood: FC = () => {
               <h3>{good?.price} ₸</h3>
               <div>
                 <button
+                  className="cardGood__inner-container-1-btn-1"
                   disabled={goodsCount === 1 ? true : false}
                   onClick={() => setGoodsCount(goodsCount - 1)}>
                   -
                 </button>
                 <h4>{goodsCount}</h4>
-                <button onClick={() => setGoodsCount(goodsCount + 1)}>+</button>
+                <button
+                  className="cardGood__inner-container-1-btn-2"
+                  onClick={() => setGoodsCount(goodsCount + 1)}>
+                  +
+                </button>
               </div>
               <button onClick={() => addGoodToCartHandler(good)}>
                 В корзину
@@ -63,31 +68,26 @@ const CardGood: FC = () => {
               </button>
             </div>
             <div className="cardGood__inner-container-2">
-              <button
-                className="cardGood__inner-container-2-btn-3"
-                onClick={() => addGoodToCartHandler(good)}>
-                В корзину
-                <img src={cart} alt="carts" />
-              </button>
+              <div>
+                <button
+                  className="cardGood__inner-container-2-btn-3"
+                  onClick={() => addGoodToCartHandler(good)}>
+                  В корзину
+                  <img src={cart} alt="carts" />
+                </button>
+              </div>
               <button className="cardGood__inner-container-2-btn-1">
                 <img src={graph} alt="graph" />
               </button>
-              <p>
-                При покупке от <span>10 000 ₸</span> бесплатная доставка по Кокчетаву и области
-              </p>
-              <button className="cardGood__inner-container-2-btn-2">
-                Прайс-лист
-                <img src={download} alt="download" />
-              </button>
-            </div>
-            <div className="cardGood__inner-container-3">
-              <p>
-                При покупке от <span>10 000 ₸</span> бесплатная доставка по Кокчетаву и области
-              </p>
-              <button className="cardGood__inner-container-3-btn-2">
-                Прайс-лист
-                <img src={download} alt="download" />
-              </button>
+              <div>
+                <p>
+                  При покупке от <span>10 000 ₸</span> бесплатная доставка по Кокчетаву и области
+                </p>
+                <button className="cardGood__inner-container-2-btn-2">
+                  Прайс-лист
+                  <img src={download} alt="download" />
+                </button>
+              </div>
             </div>
             <ul className="cardGood__inner-info">
               <li>
