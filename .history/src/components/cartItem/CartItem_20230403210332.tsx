@@ -39,21 +39,15 @@ const CartItem: FC<ICartItemProps> = ({ item }) => {
             : description}
         </p>
       </div>
-      <div className="cartItem__container">
-        <div className="cartItem__count">
-          <button
-            disabled={+count === 1 ? true : false}
-            onClick={() => dispatch(changeCount(['-', id]))}>
-            -
-          </button>
-          <span>{count}</span>
-          <button onClick={() => dispatch(changeCount(['+', id]))}>+</button>
-        </div>
-        <h2>{(price * count).toFixed(2)} ₸</h2>
-        <button onClick={() => dispatch(removeGood(id))}>
-          <img src={bin} alt="bin" />
-        </button>
+      <div className="cartItem__count">
+        <button onClick={() => dispatch(changeCount(['-', id]))}>-</button>
+        <span>{count}</span>
+        <button onClick={() => dispatch(changeCount(['+', id]))}>+</button>
       </div>
+      <h2>{(price * count).toFixed(2)} ₸</h2>
+      <button onClick={() => dispatch(removeGood(id))}>
+        <img src={bin} alt="bin" />
+      </button>
     </li>
   );
 };

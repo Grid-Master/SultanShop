@@ -39,13 +39,9 @@ const CartItem: FC<ICartItemProps> = ({ item }) => {
             : description}
         </p>
       </div>
-      <div className="cartItem__container">
+      <div>
         <div className="cartItem__count">
-          <button
-            disabled={+count === 1 ? true : false}
-            onClick={() => dispatch(changeCount(['-', id]))}>
-            -
-          </button>
+          <button onClick={() => dispatch(changeCount(['-', id]))}>-</button>
           <span>{count}</span>
           <button onClick={() => dispatch(changeCount(['+', id]))}>+</button>
         </div>
