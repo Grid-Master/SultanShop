@@ -29,15 +29,15 @@ const Breadcrumbs: FC = () => {
         <div className="breadcrumbs-inner">
           <h4>Главная</h4>
           {path.pathname.split('/').at(2) === 'catalog' ? (
-            <h4 onClick={() => navigateHandler('/SultanShop/catalog')}>Каталог</h4>
+            <h4 onClick={() => navigateHandler('/catalog')}>Каталог</h4>
           ) : null}
           {path.pathname.split('/').at(2) === 'cart' ? (
-            <h4 onClick={() => navigateHandler('/SultanShop/cart')}>Корзина</h4>
+            <h4 onClick={() => navigateHandler('/cart')}>Корзина</h4>
           ) : null}
-          {path.pathname.split('/').length > 3 && path.pathname.split('/').at(2) === 'catalog' ? (
+          {path.pathname.split('/').length > 2 && path.pathname.split('/').at(1) === 'catalog' ? (
             <p>{careType}</p>
           ) : null}
-          {path.pathname.split('/').length > 3 && path.pathname.split('/').at(2) === 'cart' ? (
+          {path.pathname.split('/').length > 2 && path.pathname.split('/').at(1) === 'cart' ? (
             <p>Оформление заказа</p>
           ) : null}
         </div>

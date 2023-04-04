@@ -34,10 +34,10 @@ const Breadcrumbs: FC = () => {
           {path.pathname.split('/').at(2) === 'cart' ? (
             <h4 onClick={() => navigateHandler('/SultanShop/cart')}>Корзина</h4>
           ) : null}
-          {path.pathname.split('/').length > 3 && path.pathname.split('/').at(2) === 'catalog' ? (
+          {path.pathname.split('/').length > 2 && path.pathname.split('/').at(2) === 'catalog' ? (
             <p>{careType}</p>
           ) : null}
-          {path.pathname.split('/').length > 3 && path.pathname.split('/').at(2) === 'cart' ? (
+          {path.pathname.split('/').length > 2 && path.pathname.split('/').at(2) === 'cart' ? (
             <p>Оформление заказа</p>
           ) : null}
         </div>
